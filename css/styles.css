@@ -304,6 +304,14 @@ h3 {
   margin-bottom: 50px;
 }
 
+.button-list .item {
+  margin-left: 8px;
+}
+
+.button-list .item:only-child {
+  margin-left: 0px;
+}
+
 .portfolio-exaples {
   display: flex;
   flex-wrap: wrap;
