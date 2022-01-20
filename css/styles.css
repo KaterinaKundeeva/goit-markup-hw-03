@@ -40,7 +40,7 @@ body {
 }
 
 .conteiner {
-  border: 2px dashed tomato;
+  /* border: 2px dashed tomato; */
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -178,6 +178,16 @@ h2 {
   justify-content: space-between;
 }
 
+.features .item {
+  /* margin-right: 30px; */
+  justify-content: space-between;
+  width: 270px;
+}
+
+/* .features .item:nth-last-child(4) {
+  margin-right: 0;
+} */
+
 .features-text {
   color: var(--secondary-text-color);
   font-size: 14px;
@@ -207,7 +217,7 @@ h2 {
   justify-content: space-between;
 }
 
-. .section-team {
+.section-team {
   background-color: var(--third-background-color);
 }
 .team-name {
@@ -215,6 +225,7 @@ h2 {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-top: 30px;
 }
 
 .team-position {
@@ -290,9 +301,29 @@ h3 {
 .button-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
-.button-list .item + .item {
+.portfolio-exaples {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.utilities {
+  display: block;
+}
+
+.portfolio-exaples .item {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-exaples .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+. .button-list .item + .item {
   margin-left: 8px;
 }
 
@@ -335,7 +366,7 @@ h3 {
 }
 
 .conteiner-portfolio {
-  border: 2px dashed tomato;
+  /* border: 2px dashed tomato; */
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
