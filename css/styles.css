@@ -136,9 +136,11 @@ p {
   line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 
-h1 {
+.hero-title {
   margin-top: 0;
   margin-bottom: 29px;
 }
@@ -158,6 +160,13 @@ h1 {
   border-radius: 4px;
   margin-top: 0;
   margin-bottom: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
 }
 
 .hero .conteiner {
@@ -173,20 +182,32 @@ h2 {
 
 /*Особенности*/
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .features {
   display: flex;
-  justify-content: space-between;
 }
 
 .features .item {
-  /* margin-right: 30px; */
-  justify-content: space-between;
+  margin-right: 30px;
   width: 270px;
 }
 
-/* .features .item:nth-last-child(4) {
+.features .item:nth-last-child(4) {
   margin-right: 0;
-} */
+}
 
 .features-text {
   color: var(--secondary-text-color);
@@ -208,13 +229,27 @@ h2 {
 /* Чем мы занимаемся */
 .areas-of-work {
   display: flex;
-  justify-content: space-between;
+}
+
+.areas-of-work-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*Наша команда*/
 .team-list {
   display: flex;
-  justify-content: space-between;
+}
+
+.team-card {
+  background-color: #fff;
+  margin-bottom: 94px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-card:not(:last-child) {
+  margin-right: 30px;
 }
 
 .section-team {
@@ -325,6 +360,9 @@ h3 {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 
 .portfolio-exaples .item:nth-child(3n) {
