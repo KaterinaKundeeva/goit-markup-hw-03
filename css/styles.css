@@ -443,7 +443,7 @@ h3 {
   padding-left: 24px;
 }
 
-. .example-type {
+.example-type {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
@@ -454,9 +454,11 @@ h3 {
 .conteiner-portfolio {
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  margin-top: 94px;
-  margin-bottom: 94px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
